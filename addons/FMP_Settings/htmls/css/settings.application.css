@@ -1,0 +1,33 @@
+/* ------- PLOX DONT EDIT ME UNLESS YOU ARE BETTER THAN ME, YOU PROBABLY ARE. --------- */
+
+::-webkit-scrollbar {
+  display: hidden !important;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	background-overflow: visible !important;	
+	min-height: 770px !important;  /* THESE */
+	max-width: 432px !important;
+	overflow-wrap: break-word !important;
+    overflow: hidden !important;	
+	font-family: "Serithai";
+	font-weight: normal;
+	font-style: normal;
+    background-color: rgba(225,225,225,0.95) !important;	
+	box-shadow:	inset 0px 0px 8px 4px rgba(0,0,0,0.55)!important;	
+}

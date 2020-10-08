@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- To Do
+	- Settings Menu - Change the Scale on menu list, for cross page ability
+	-
+	-
+	-
+	-
+	-
+	-
+	-->
+<!--------------------------------------------------------------------->
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Page Name -->
+	<title>FiveM-Phone</title>
+	<!-- Links-->
+	<link id="StyleSheet" rel="stylesheet" href="css/fivem-phone.css">
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/fivem-phone.js"></script>
+</head>
+<!--------------------------------------------------------------------->
+<body>
+	<!-- The Entire Screen -->
+	<div id="Page">
+		<!-- The Phone Yo... -->
+		<div id="Container">
+
+			<div id="Wrapper">
+
+				<div id="Phone">
+
+					<!-- OS TOP -->
+					<div id="OSTop"></div>
+
+					<div id="OSLock" style="z-index:40;"><div id="Unlock"><img class="Unlock" src="img/icons8-fingerprint-500.png"></img></div></div>
+
+					<!-- OS BOTTOM  -->
+					<div id="OSBot"><a id="OSBotA" class="tooltip"><button><img src="img/icons8-important-event-500.png"></button><span class="tooltiptext">Restart</span></a> <a id="OSBotB" class="tooltip"><button><img src="img/icons8-home-page-500.png"></button><span class="tooltiptext">Home</span></a></div>
+
+					<!-- IFRAME STACK  -->
+					<iframe id="UseFrame" class="iframe" src="html\home.html"></iframe>
+					<iframe class="iframe-background" src="html\background.html"></iframe>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Image Under the Stack. -->
+		<img id="image" src="img/phone.png" class="phoneimage">
+	</div>
+
+
+</body>
+<!--------------------------------------------------------------------->
+</html>

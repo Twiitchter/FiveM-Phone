@@ -1,0 +1,119 @@
+/* ------- PLOX DONT EDIT ME UNLESS YOU ARE BETTER THAN ME, YOU PROBABLY ARE. --------- */
+
+::-webkit-scrollbar {
+	display: hidden !important;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    max-width: 432px !important; /* THESE */
+    resize: both;
+    zoom: 80%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	background-overflow: visible !important;
+	min-height: 770px !important;  /* THESE */
+	max-width: 432px !important; /* THESE */
+	overflow-wrap: break-word !important;
+    overflow: hidden !important;	
+	font-family: "Serithai";
+	font-weight: normal;
+	font-style: normal;
+    background-color: rgba(0,0,0,0) !important;	
+	box-shadow:	inset 0px 0px 8px 4px rgba(0,0,0,0)!important;	
+}
+
+#Container{
+    margin: inherit !important;
+    padding: inherit !important;
+    background-color: rgba(0,0,0,0) !important;
+	background-overflow: visible !important;	
+	position: absolute !important;
+	min-height: 770px !important;  /* THESE */
+	max-width: 432px !important; /* THESE */
+	overflow-wrap: break-word !important;
+}
+
+#InnerContainer{
+	padding: 13% 5% 9% 5% !important;	
+}
+
+/* ------------------------- EDIT BELOW THIS LINE ---------------------- */
+
+#Page{
+    border: 2px !important;
+	border-style: solid !important;
+	height: 658px !important;  /* THESE */
+	width: 388px !important; /* THESE */		
+    border-color: rgba(0,0,0,0.9) !important;		
+	box-shadow:	0px 0px 8px 4px rgba(0,0,0,0.9)!important;
+    background-color: rgba(0,0,0,0.4) !important;		
+	margin: 0 !important;
+	text-align: centre !important;
+	flex-direction: row !important;
+	flex-wrap: wrap !important;
+}
+
+/* Chat containers */
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--------------------------------------------------------------------->
+
+
+
+<!--------------------------------------------------------------------->
+<head>
+<!--------------------------------------------------------------------->
+    <!-- Meta -->
+	
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+	<!-- Page Name -->
+	
+		<title>FiveM-CallApp</title>
+		
+	<!-- Links -- All Child Links, Need ../css/ChildDoc.css-->
+		
+		<link rel="stylesheet" href="css/call.application.css">
+	
+	<!-- Scripts -->	
+	
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	
+<!--------------------------------------------------------------------->
+</head>
+<!--------------------------------------------------------------------->
+<script>
+$(document).ready(function () {
+	//called when key is pressed in textbox
+	$("#CallNum").keypress(function (e) {
+		//if the letter is not digit then display error and don't type anything
+		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+			//display error message
+			$("#Err").html("Digits Only").show().fadeOut("slow");
+				return false;
+		}
+	});
+});
+</script>
+<!--------------------------------------------------------------------->
+<body>
+<!--------------------------------------------------------------------->
+<div id="Container">
+
+	<!-- THE PAGE YOU NEED TO EDIT IS BELOW -->
+	
+		<div id="Page">
+			
+			<input class="CallNum" type="tel" id="CallNum" pattern="[0-9]{8}" maxlength="8" minlength="8" ></input>
+			
+			<div id="Err"></div>
+
+			<a id="Call" class="tooltip"><button><img src="img/icons8-tick-box-500.png"></img></button><span class="tooltiptext">Call</span></a>
+			<a id="EndCall" class="tooltip"><button><img src="img/icons8-unavailable-500.png"></img></button><span class="tooltiptext">End Call</span></a>
+		</div>
+		
+	<!-- THE PAGE YOU NEED TO EDIT IS ABOVE -->	
+
+</div>
+<!--------------------------------------------------------------------->
+</body>
+<!--------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------->
+</html>

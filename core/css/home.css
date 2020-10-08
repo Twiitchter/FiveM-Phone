@@ -1,0 +1,132 @@
+/* ------- PLOX DONT EDIT ME UNLESS YOU ARE BETTER THAN ME, YOU PROBABLY ARE. --------- */
+
+@font-face {
+	font-family: "Serithai";
+	src: url("/fonts/Serithai.ttf") format("ttf");
+}
+
+html {
+	overflow: scroll;
+	overflow-x: hidden;
+	resize: both;
+	zoom: 80%;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	background-color: rgba(0,0,0,0) !important;
+	background-overflow: visible !important;	
+	min-height: 770px !important;  /* THESE */
+	max-width: 432px !important;
+	overflow-wrap: break-word !important;
+    overflow: scroll !important;	
+	font-family: "Serithai";
+	font-weight: normal;
+	font-style: normal;	
+}
+
+
+#Container{
+    width: inherit !important;
+    height: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: rgba(0,0,0,0) !important;
+	background-overflow: visible !important;	
+	text-align: centre !important;
+	min-height: 770px !important;  /* THESE */
+	max-width: 432px !important;
+	overflow-wrap: break-word !important;
+}
+
+#InnerContainer{
+	padding: 4.25% 3.25% 4.25% 3.25% !important;
+}
+
+/* ------------------------- EDIT BELOW THIS LINE ---------------------- */
+
+#Page{
+    border: 1px;	
+    border-color: rgba(0,0,0,0) !important;		
+	margin: 0 !important;
+	text-align: centre !important;
+	display: flex;	
+	flex-flow: row wrap !important;	
+}
+
+.apps{
+	padding: 7.25px 7.25px 0px 7.25px !important;
+}
+
+a {
+	text-decoration: none !important;
+
+}
+
+a img {
+	border: 0px !important;
+	margin: 0 !important;
+	max-width: 86px !important;
+	max-height: 86px !important;
+	border-color: rgba(0,0,0,0) !important;
+	background-overflow: visible !important;
+	border: 0px solid rgba(0,0,0,0.25) !important;
+	border-radius: 50% !important;
+	background-color: rgba(255,255,255,0.25) !important;
+}
+
+a img:hover {
+	border: 0px !important;
+	margin: 0 !important;
+	max-width: 86px !important;
+	max-height: 86px !important;
+	border-color: rgba(0,0,0,0) !important;
+	background-overflow: visible !important;
+	border: 0px solid rgba(0,0,0,0.25) !important;
+	border-radius: 50% !important;
+	background-color: rgba(0,0,0,0.25) !important;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 100px;
+	background-color: black;
+	font-size: 17px;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 30;
+	top: 100px;
+	left: 0px;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+	content: " ";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
